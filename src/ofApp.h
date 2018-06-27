@@ -13,8 +13,6 @@ public:
 	void start_sa(int key);
 
 	ofTrueTypeFont font;
-	ofImage name;
-	ofImage name_b;
 	ofImage title;
 	ofImage menu;
 	ofImage start_btn;

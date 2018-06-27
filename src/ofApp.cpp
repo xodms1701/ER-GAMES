@@ -21,8 +21,6 @@ void ofApp::setup() {
 	title.load("Untitled.jpg");
 	start_btn.load("start_btn.jpg");
 	exit_btn.load("exit_btn.jpg");
-	name.load("name.jpg");
-	name_b.load("name_b.jpg");
 
 	game_2.load("star_avoid.jpg");
 	game_3.load("riding_horse.jpg");
@@ -284,7 +282,6 @@ void ofApp::update() {
 //--------------------------------------------------------------
 void ofApp::draw() {
 	menu2.draw(0, 0, 1920, 1080);
-	name.draw(1780, 45);
 	if (start == 0) {//게임 시작화면
 		title.draw(310, 35);
 		start_btn.draw(775, 500);
@@ -491,7 +488,6 @@ void ofApp::draw() {
 
 	else if (start == 7) {//경마게임 게임화면1
 		menu2.draw(0, 0, 1920, 1080);
-		name.draw(1780, 45);
 		horse_ask.draw(310, 35);
 		horse_info.draw(220, 235);
 	}
@@ -913,12 +909,10 @@ void ofApp::draw() {
 	}
 	else if (start == 18) {
 		menu.draw(0, 0);
-		name_b.draw(1780, 45);
 		next_btn.draw(775, 700);
 	}
 	else if (start == 19) {
 		menu.draw(0, 0);
-		name_b.draw(1780, 45);
 		font.drawString("Save Success", 680, 280);
 		next_btn.draw(775, 700);
 	}
